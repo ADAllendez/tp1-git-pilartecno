@@ -45,8 +45,17 @@ console.log(contenedor);
 */
 
 function findKeysInCommon(objeto1, objeto2) {
-  // Tu código aquí
-}
+    const key1 = Object.keys(objeto1);
+    const key2 = Object.keys(objeto2);
+    
+    return key1.filter(key => key2.includes(key));
+  }
+  
+  const objeto1 = {a: 1, b: 2, c: 3};
+  const objeto2 = {b: 4, c: 5, d: 6};
+  
+  const keysInCommon = findKeysInCommon(objeto1, objeto2);
+  console.log(keysInCommon);
 
 // Llamamos a las funciones y mostramos los resultados
 
