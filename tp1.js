@@ -21,7 +21,20 @@ function extractValues(obj) {
 */
 
 function arrayToLengthCounters(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let key = arr[i];
+    let value = key.length;
+
+    contenedor[key] = value;
+  }
+
+  return contenedor;
 }
+let str = ["gato", "perro","elefante"];
+
+let contenedor = arrayToLengthCounters(str);
+console.log(contenedor);
+
 
 /*  
   Ejercicio 3: 
