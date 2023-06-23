@@ -1,0 +1,12 @@
+{
+  "name": "practico-1",
+  "version": "1.0.0",
+  "description": "En este trabajo práctico tendrás que descargar un archivo .zip, descomprimirlo y resolver tres ejercicios de JavaScript. Adicionalmente, deberás trabajar con Git y GitHub para subir tus soluciones.",
+  "main": "tp1.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}
