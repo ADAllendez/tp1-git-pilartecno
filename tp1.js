@@ -4,10 +4,13 @@
   Ejemplo: 
   extractValues({a: 1, b: 2, c: 3}) debería retornar [1, 2, 3]
 */
+function extractValues(obj) {
+    return Object.values(obj);
+  }
+  
+  
+  console.log(extractValues({a: 1, b: 2, c: 3})); 
 
-function extractValues(data) {
-  // Tu código aquí
-}
 
 /*  
   Ejercicio 2: 
@@ -17,8 +20,7 @@ function extractValues(data) {
   arrayToLengthCounters(['gato', 'perro', 'elefante']) debería retornar {gato: 4, perro: 5, elefante: 8}
 */
 
-function arrayToLengthCounters(array) {
-  // Tu código aquí
+function arrayToLengthCounters(arr) {
 }
 
 /*  
