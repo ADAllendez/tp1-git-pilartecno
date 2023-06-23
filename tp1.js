@@ -5,7 +5,8 @@
   extractValues({a: 1, b: 2, c: 3}) debería retornar [1, 2, 3]
 */
 function extractValues(obj) {
-    return Object.values(obj);
+    
+  return Object.values(obj);
   }
   
   
