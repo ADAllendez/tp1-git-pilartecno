@@ -4,10 +4,14 @@
   Ejemplo: 
   extractValues({a: 1, b: 2, c: 3}) debería retornar [1, 2, 3]
 */
+function extractValues(obj) {
+    
+  return Object.values(obj);
+  }
+  
+  
+  console.log(extractValues({a: 1, b: 2, c: 3})); 
 
-function extractValues(data) {
-  // Tu código aquí
-}
 
 /*  
   Ejercicio 2: 
@@ -17,9 +21,21 @@ function extractValues(data) {
   arrayToLengthCounters(['gato', 'perro', 'elefante']) debería retornar {gato: 4, perro: 5, elefante: 8}
 */
 
-function arrayToLengthCounters(array) {
-  // Tu código aquí
+function arrayToLengthCounters(arr) {
+  for (let i = 0; i < arr.length; i++) {
+    let key = arr[i];
+    let value = key.length;
+
+    contenedor[key] = value;
+  }
+
+  return contenedor;
 }
+let str = ["gato", "perro","elefante"];
+
+let contenedor = arrayToLengthCounters(str);
+console.log(contenedor);
+
 
 /*  
   Ejercicio 3: 
@@ -30,8 +46,17 @@ function arrayToLengthCounters(array) {
 */
 
 function findKeysInCommon(objeto1, objeto2) {
-  // Tu código aquí
-}
+    const key1 = Object.keys(objeto1);
+    const key2 = Object.keys(objeto2);
+    
+    return key1.filter(key => key2.includes(key));
+  }
+  
+  const objeto1 = {a: 1, b: 2, c: 3};
+  const objeto2 = {b: 4, c: 5, d: 6};
+  
+  const keysInCommon = findKeysInCommon(objeto1, objeto2);
+  console.log(keysInCommon);
 
 // Llamamos a las funciones y mostramos los resultados
 
